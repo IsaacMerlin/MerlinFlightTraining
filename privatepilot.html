@@ -6,31 +6,31 @@
     <title>Private Pilot - Merlin Flight Training</title>
     <link rel="icon" type="image/png" href="favicon64.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
     <!-- Navigation Bar -->
-    <nav class="text-white sticky top-0 z-50 h-48" style="background-color: rgb(55, 24, 0)">
-        <div class="flex items-center h-48">
-            <a href="index.html"><img src="Isaacs Flight Training-02.png" alt="Merlin Flight Training Logo" class="h-64 w-64"></a>
-            <div class="navbartext flex justify-between flex-1 ml-24 mr-24 text-2l whitespace-nowrap">
-                <a href="index.html" class="hover:text-blue-300">Home</a>
-                <a href="index.html#aboutus" class="hover:text-blue-300">About Us</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html"><img src="Isaacs Flight Training-02.png" alt="Merlin Flight Training Logo" class="h-12 w-auto"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#aboutus">About Us</a>
                 <div class="dropdown">
-                        <a href="services.html" class="hover:text-blue-300">Services</a>
-                            <div class="dropdown-content">
-                                <a href="privatepilot.html">Private Pilot</a>
-                                <a href="instrumenttraining.html">Instrument Rating</a>
-                                <a href="commercial-pilot.html">Commercial Pilot</a>
-                                <a href="flight-review.html">Flight Review</a>
-                                <a href="high-performance-endorsement.html">High Performance Endorsement</a>
-                                <a href="flight-instruction.html">Flight Instruction</a>
-                            </div>
+                    <a href="services.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="privatepilot.html">Private Pilot</a>
+                        <a href="instrumenttraining.html">Instrument Rating</a>
+                        <a href="commercial-pilot.html">Commercial Pilot</a>
+                        <a href="flight-review.html">Flight Review</a>
+                        <a href="high-performance-endorsement.html">High Performance Endorsement</a>
+                        <a href="flight-instruction.html">Flight Instruction</a>
+                    </div>
                 </div>
-                <a href="index.html#contact" class="hover:text-blue-300">Contact Us</a>
+                <a href="index.html#contact" class="btn-cta">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -87,7 +87,7 @@
           </p>
         </div>
         <div class="bg-white rounded-lg shadow-md p-8 h-full flex items-center justify-center">
-          <a href="index.html#contact" class="inline-block bg-yellow-900 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-700 transition-colors duration-200">
+          <a href="index.html#contact" class="btn-primary inline-block text-xl font-bold">
             Start Your Training
           </a>
         </div>
@@ -107,7 +107,7 @@
           </p>
           <!-- Backseat Pilot Logo Section -->
           <div class="flex justify-center items-center mb-8">
-            <div class="p-4 inline-block" style="background-color: rgb(55, 24, 0); opacity: 0.7">
+            <div class="p-4 inline-block" style="background-color: var(--navy); opacity: 0.7">
               <img src="Backseat-pilot-logo.avif" alt="Backseat Pilot Logo" class="h-24 w-auto object-contain" />
             </div>
           </div>
@@ -204,4 +204,5 @@
           </div>
         </div>
     </footer>
+</body>
 </html>
